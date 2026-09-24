@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Dicas de Programação - Exercícios</title>
+</head>
+<body>
+
+<header>
+    <h1>Dicas de Programação</h1>
+    <p>Registre seu progresso e organize sua rotina de exercícios de código.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="boas-praticas.html">Boas Práticas</a></li>
+        <li><a href="exercicios.html">Exercícios</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Formulário de acompanhamento de estudos</h2>
+        <article>
+            <p>
+                Preencha o formulário abaixo para registrar como está indo a sua prática de
+                exercícios de programação nesta semana.
+            </p>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </p>
+
+                <p>
+                    <label for="linguagem">Linguagem estudada:</label><br>
+                    <input list="linguagens-sugeridas" id="linguagem" name="linguagem"
+                           placeholder="Ex: Python" required>
+                    <datalist id="linguagens-sugeridas">
+                        <option value="Python">
+                        <option value="JavaScript">
+                        <option value="Java">
+                        <option value="C">
+                        <option value="C#">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="data-estudo">Data do último estudo:</label><br>
+                    <input type="date" id="data-estudo" name="data-estudo" required>
+                </p>
+
+                <p>
+                    <label for="horas-semana">Horas de prática por semana:</label><br>
+                    <input type="range" id="horas-semana" name="horas-semana" min="0" max="40" step="1" value="5">
+                </p>
+
+                <p>
+                    <label for="comprovante">Enviar comprovante de conclusão de curso (opcional):</label><br>
+                    <input type="file" id="comprovante" name="comprovante">
+                </p>
+
+                <p>
+                    <label for="anotacoes">Anotações da semana:</label><br>
+                    <textarea id="anotacoes" name="anotacoes" placeholder="O que você praticou, o que travou, o que quer revisar..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Registrar progresso</button>
+                </p>
+
+            </form>
+        </article>
+
+        <aside>
+            <p>
+                Preencher esse tipo de registro toda semana ajuda a perceber padrões: em quais
+                dias você <mark>realmente</mark> estuda e em quais só planeja estudar.
+            </p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Progresso da meta semanal</h2>
+        <p>Meta de 10 horas de prática nesta semana:</p>
+        <progress value="6" max="10">6 de 10 horas</progress>
+        <p>6 de 10 horas já concluídas.</p>
+
+        <p>Nível de dificuldade percebido nos exercícios desta semana:</p>
+        <meter min="0" max="10" value="7" low="3" high="8" optimum="5">7 de 10</meter>
+    </section>
+
+</main>
+
+<footer>
+    <p>feito em HTML puro, sem CSS</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Dicas de Programação - Boas Práticas</title>
+</head>
+<body>
+
+<header>
+    <h1>Dicas de Programação</h1>
+    <p>Boas práticas para escrever um código melhor.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="boas-praticas.html">Boas Práticas</a></li>
+        <li><a href="exercicios.html">Exercícios</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Uma coisa que ficou na cabeça de uma aula</h2>
+        <article>
+            <p>
+                Não vou fingir que lembro a frase palavra por palavra, mas o que ficou de uma
+                explicação em aula foi mais ou menos isso:
+            </p>
+            <blockquote>
+                <p>
+                    tag n é enfeitte, cada um tem que significar alguma coisa no conteudo, não so pra
+                    funcionar visualmemte
+                </p>
+            </blockquote>
+            <p>
+                Foi meio isso que eu tentei seguir aqui: usar as tags semânticas certas
+                (<abbr title="Hyper Text Markup Language">HTML</abbr> puro) em vez de jogar tudo
+                dentro de div, mesmo sem CSS pra "disfarçar" nada.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Checklist de boas práticas</h2>
+
+        <details open>
+            <summary>nome de variável decente</summary>
+            <p>
+                Já perdi tempo demais mexendo em código meu de <code>x1</code>, <code>temp</code> e
+                outras variáveis assim que eu mesmo não lembrava o que faziam duas semanas depois.
+                Hoje tento usar <mark>nome que explica</mark>, tipo <code>calcularMediaFinal</code>,
+                mesmo que fique mais longo de digitar.
+            </p>
+        </details>
+
+        <details>
+            <summary>comentário bom explica o porquê</summary>
+            <p>
+                <del>// soma 1 a i</del> não serve pra nada, o código já mostra isso sozinho. Já
+                <ins>// avança pro próximo da fila de espera</ins> explica uma coisa que só olhando
+                pro código eu não ia saber na hora.
+            </p>
+        </details>
+
+        <details>
+            <summary>testar aos pedaços</summary>
+            <p>
+                Eu tinha o costume de escrever um monte de linha antes de rodar pela primeira vez, e
+                aí quando dava erro eu não fazia ideia de onde. Testando aos poucos fica bem mais
+                fácil de achar o problema.
+            </p>
+        </details>
+    </section>
+
+</main>
+
+<footer>
+    <p>Dicas de Programação - projeto de HTML puro</p>
+</footer>
+
+</body>
+</html>
